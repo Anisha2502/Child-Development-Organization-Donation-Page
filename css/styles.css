@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,200&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+}
+h1, h2, h3 {
+    font-weight: 900 !important;
+}
+a {
+    text-decoration: none;  
+    font-weight: 600;
+}
+img {
+    width: 100%;
+}
+.light {
+    color: #F14B05;
+}
+.dark {
+    background-color: #262F36;
+}
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #F14B05
+}
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section h1, .home-section p{
+    animation: fadeInDown 2s ease forwards;
+}
+.home-section form{
+    display: inline-block;
+    padding: 20px 0;
+    animation: fadeInUp 3s ease forwards;
+}
+@keyframes fadeInDown{
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.home-section form:hover{
+    transform: scale(1.2) !important;
+}
+.bg-cover {
+    background-image: url(../images/happy_kids.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+.intro {
+    margin-bottom: 30px;
+}
+.divider {
+    height: 4px;
+    width: 70px;
+    background-color: #F14B05;
+    margin: 16px auto;
+}
+.about-img {
+    overflow: hidden;
+    position: relative;
+}
+.about-img img, .about-img .about-overlay {
+    transition: all 0.5s ease;
+}
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(241, 75, 5, 0.7);
+    display: flex;
+    align-items: center; 
+    opacity: 0;
+}
+.overlay-text {
+    font-size: 120%;
+    color: #fff;
+}
+.about:hover .about-overlay{
+    opacity: 1;
+}
+.about:hover img{
+    transform: scale(1.2);
+}
+#contact-us {
+    padding-bottom: 30px;
+}
+form .form-control {
+    border-radius: 0;
+    border: none;
+    background-color: #2C353C;
+    color: #fff;
+}
+form input.form-control {
+    height: 54px;
+}
+form .form-control::placeholder {
+    color: #fff;
+}
+form .form-control:focus {
+    background-color: #2C353C;
+    color: #fff;
+}
+.btn {
+    background-color: #F14B05;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 22px;
+    border-radius: 0px;
+    border: none;
+    transition: transform .3s;
+}
+.btn:hover {
+    color: #fff;
+    transform: scale(1.1) !important;
+}
